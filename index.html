@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="rps.js"></script>
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <p>On my planet we learn about an Earth game: Rock, Paper, Scissors.<br>
+                I've never played with a human before! Will you play with me?<br>
+                First to 5 wins! If you win I'll let you drive my spaceship!<br>
+                (If you lose I get a <span class="tooltip">copy of your consciousness&#128125)<span class="nonconsent">
+                <b>You are not actually consenting to a consciousness copying</b></span></span></p>
+
+    <br>
+    <button class="choices" onclick="userChoseRock(); updateUserHand('rock')"><b>Rock</b></button>
+    <button class="choices" onclick="userChosePaper(); updateUserHand('paper')"><b>Paper</b></button>
+    <button class="choices" onclick="userChoseScissors(); updateUserHand('scissors')"><b>Scissors</b></button>
+    <br>
+
+    <div>
+        <div id="win-counter">Wins: <b>0</b></div>
+        <div id="tie-counter">Ties: <b>0</b></div>
+        <div id="loss-counter">Losses: <b>0</b></div>
+    </div>
+
+    <br><br><br><br>
+    <div class="visual">
+    <img src="images/user.png" id="user-icon">
+    <img src="images/blank-space.png" id="user-hand">
+    <img src="images/blank-space.png" id="computer-hand">
+    <img src="images/computer-neutral.png" id="computer-icon">
+    </div>
+    
+    <p id="notifyResults">Make a choice!</p>
+
+</body>
+</html>
